@@ -1,4 +1,4 @@
-# terraform-github-actions
+# terraform-github-actions  
 
 ## Terraform GitHub Actions CI/CD Project
 
@@ -33,7 +33,7 @@ These actions are managed and automated via **GitHub Actions workflows**, enabli
 - CDelivery focuses on preparing codes for deployment.
 - CDeployment focuses on automating the entire deployment process.
 
-**GitHub Actions** is a built-in CI/CD tool provided by GitHub that allows you to automate workflows directly in your GitHub repository.
+## GitHub Actions is a built-in CI/CD tool provided by GitHub that allows you to automate workflows directly in your GitHub repository.
 
 In this project, GitHub Actions ensures that:
 - Your Terraform code is validated and applied automatically on push
@@ -61,18 +61,13 @@ Triggered on every push to the main branch, this workflow:
 
 ---
 
-## 🔐 Secrets Configuration
+## Secrets Configuration
 
 Set the following GitHub Secrets under:
 `GitHub Repo` → `Settings` → `Secrets and variables` → `Actions`
 
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
-
-Ensure that these credentials belong to an IAM user with permission for:
-- EC2
-- S3
-- IAM (if needed)
 
 ---
 
@@ -122,6 +117,7 @@ To manually destroy all resources:
 
 ## Project Folder Structure
 
+```
 terraform-cicd/
 ├── main.tf                                    # Infrastructure definition
 ├── variables.tf                               # Input variables
@@ -131,6 +127,7 @@ terraform-cicd/
 │       └── deploy.terraform.yml        # CI/CD workflow for deploy
 │       └── cleanup.terraform.yml      # Manual destroy workflow
 ├── README.md                           # Project documentation
+```
 
 ---
 
