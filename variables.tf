@@ -15,7 +15,7 @@ variable "instance_tag" {
 }
 
 variable "bucket_name" {
-  default = "MyGracesoAmazing20251707"
+  default = "mygracesoamazing20251707"
 }
 
 variable "bucket_tag" {

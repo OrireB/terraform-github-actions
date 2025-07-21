@@ -1,5 +1,5 @@
 output "s3_bucket_name" {
-  value       = aws_s3_bucket.MyGracesoAmazing20251707.id
+  value       = aws_s3_bucket.mygracesoamazing20251707.id
   description = "Name of the created S3 bucket"
 }
 
