@@ -7,17 +7,9 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
-  default = "t2-micro"
+  default = "t2.micro"
 }
 
 variable "instance_tag" {
   default = "Upscale"
-}
-
-variable "bucket_name" {
-  default = "mygracesoamazing20251707"
-}
-
-variable "bucket_tag" {
-  default = "Upgrade"
 }

@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket  = "mygracesoamazing20251707"
+    bucket  = "mygracesoamazing20251707"   # Must match exactly the name of the manually created bucket
     region  = "us-east-1"
-    key     = "s3-github-actions/terraform.tfstate"
+    key     = "terraform.tfstate"
     encrypt = true
   }
 
