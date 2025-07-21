@@ -33,7 +33,9 @@ These actions are managed and automated via **GitHub Actions workflows**, enabli
 - CDelivery focuses on preparing codes for deployment.
 - CDeployment focuses on automating the entire deployment process.
 
-## GitHub Actions is a built-in CI/CD tool provided by GitHub that allows you to automate workflows directly in your GitHub repository.
+## GitHub Actions
+
+GitHub Actions is a built-in CI/CD tool provided by GitHub that allows you to automate workflows directly in your GitHub repository.
 
 In this project, GitHub Actions ensures that:
 - Your Terraform code is validated and applied automatically on push
@@ -119,14 +121,14 @@ To manually destroy all resources:
 
 ```
 terraform-cicd/
-├── main.tf                                    # Infrastructure definition
-├── variables.tf                               # Input variables
-├── outputs.tf                                # Output values (e.g. public IP, bucket name)
+├── main.tf                           # Infrastructure definition
+├── variables.tf                      # Input variables
+├── outputs.tf                        # Output values (e.g. public IP, bucket name)
 ├── .github/
 │   └── workflows/
-│       └── deploy.terraform.yml        # CI/CD workflow for deploy
-│       └── cleanup.terraform.yml      # Manual destroy workflow
-├── README.md                           # Project documentation
+│       └── deploy.terraform.yml      # CI/CD workflow for deploy
+│       └── cleanup.terraform.yml     # Manual destroy workflow
+├── README.md                         # Project documentation
 ```
 
 ---
